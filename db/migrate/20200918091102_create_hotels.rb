@@ -5,7 +5,7 @@ class CreateHotels < ActiveRecord::Migration[5.2]
       t.integer :normalPrice
       t.integer :discountPrice
       t.text :description
-      t.refereces :Category
+      t.references :Category
 
       t.timestamps
     end
