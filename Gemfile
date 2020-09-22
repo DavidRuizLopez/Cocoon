@@ -38,10 +38,9 @@ gem 'redis', '~> 4.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-#add
-gem 'bootstrap'
-
 gem 'devise'
+gem 'jquery-rails'
+gem 'bootstrap', '~> 4.5.2'
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
