@@ -1,0 +1,27 @@
+.hero{
+  background-size: cover;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://www.bestjobersblog.com/wp-content/uploads/2019/07/Nuit-Insolite-Corse-Cocoon-Village.jpg);
+  height: 64vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  text-align: center;
+  color: white;
+}
+
+.hero-btn {
+  color: black;
+  text-decoration: none;
+  background-color: #87b145;
+  padding: 1.5vh 2.5vh;
+  border-radius: 5px;
+  &:hover{
+    background-color: #436d00;
+    color:white;
+    transition: ease 0.5s;
+  }
+}
