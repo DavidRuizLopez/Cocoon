@@ -1,5 +1,21 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="hero">
+  <div class="hero-text">
+    <h1>Cocoon</h1>
+    <p>la nouvelle façon de travailler.</p>
+    <a href="" class="hero-btn">S’abonner</a>
+  </div>
+</div>
+
+<h2>Repense ta manière de télétravailler</h2>
+
+<h3>COCOON te propose une sélection de lieux pensés pour toi.</h3>
+
+<div class="cards">
+  <div class="card"></div>
+  <div class="card"></div>
+</div>
+
+<a href="" class="hero-btn">S’abonner</a>
 
 <% @categories.each do |category| %>
   <%= link_to category.price, category_path(category) %>
