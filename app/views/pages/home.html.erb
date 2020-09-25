@@ -17,6 +17,14 @@
 
 <a href="" class="hero-btn">S’abonner</a>
 
+<% @hotels.each do |hotel| %>
+  <div class="card">
+    <img src="https://www.bestjobersblog.com/wp-content/uploads/2019/07/Nuit-Insolite-Corse-Cocoon-Village.jpg" alt="">
+    <%= link_to hotel.name, hotel_path(hotel) %>
+  </div>
+<% end %>
+
+
 <% @categories.each do |category| %>
   <%= link_to category.price, category_path(category) %>
 
