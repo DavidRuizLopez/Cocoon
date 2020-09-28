@@ -1,6 +1,9 @@
 .card{
-  display: flex;
-  &:img{
-    width:300px;
+  a{
+    color: black;
+  text-decoration: none;
+  }
+  img{
+    width:100%;
   }
 }

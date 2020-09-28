@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 
   def home
     @categories = Category.all
-    @hotels = [Hotel.all[0], Hotel.all[1]]
+    @hotels_preview = [Hotel.all[0], Hotel.all[1]]
+    @hotels = Hotel.all
   end
 end
