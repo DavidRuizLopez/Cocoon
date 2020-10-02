@@ -3,6 +3,7 @@ class HotelsController < ApplicationController
   before_action :set_hotel, only: [:show]
 
   def show
+    @booking = Booking.new
   end
 
   private
