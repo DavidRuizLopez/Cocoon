@@ -1,8 +1,74 @@
-<h1> <%= @hotel.name %> </h1>
-<h2>
-<%= @hotel.normalPrice %>
-<%= @hotel.discountPrice %>
-</h2>
-<p>
- <%= @hotel.description %>
-</p>
+<div class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://cf.bstatic.com/images/hotel/max1024x768/153/153368431.jpg);">
+  <div class="hero-text">
+    <h1><%= @hotel.name %></h1>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-6">
+      <h1><%= @hotel.name %></h1>
+      <%= @hotel.Category.price %>
+      <h2>
+      <%= @hotel.normalPrice %>
+      <%= @hotel.discountPrice %>
+      </h2>
+      <p>
+       <%= @hotel.description %>
+      </p>
+
+      <div class="container show-hotel m-2">
+        <div class="row">
+          <div class="col m-3">
+            <img src="https://photos.hotelbeds.com/giata/xxl/48/484301/484301a_hb_a_004.jpg" alt="">
+          </div>
+          <div class="col m-3">
+            <img src="https://cf.bstatic.com/images/hotel/max1024x768/158/158626615.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col m-3">
+            <img src="https://cf.bstatic.com/images/hotel/max1280x900/158/158626455.jpg" alt="">
+          </div>
+          <div class="col m-3">
+            <img src="https://www.happeningmadrid.com/wp-content/uploads/2018/05/somos-y-garra.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-2"></div>
+    <div class="col-4">
+      <div class="border rounded p-5" id="bookingcard">
+        <p>Add dates to see final price</p>
+        <div class="price-top border-bottom"><span class="loct-price"><%= (@hotel.discountPrice) %>€</span> /day</div>
+        <div class="dates">
+          <%= render './bookings/form' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>Reviews</h2>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var bookingcard = document.getElementById("bookingcard");
+var sticky = bookingcard.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    bookingcard.classList.add("sticky")
+  } else {
+    bookingcard.classList.remove("sticky");
+  }
+}
+</script>

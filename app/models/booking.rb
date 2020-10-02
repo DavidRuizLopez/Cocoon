@@ -5,7 +5,7 @@ class Booking < ApplicationRecord
   belongs_to :location
   has_many :reviews, dependent: :destroy
 
-  monetize :amount_cents
+  #monetize :amount_cents
 
   enum status: [:pending, :comfirm, :canceled, :paid]
 
