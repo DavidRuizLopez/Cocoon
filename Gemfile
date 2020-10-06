@@ -40,6 +40,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'bootstrap', '~> 5.0.0.alpha1'
 
+#add flatpicker
+gem 'flatpickr'
+
 gem 'devise'
 gem 'jquery-rails'
 

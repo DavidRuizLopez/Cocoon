@@ -35,6 +35,7 @@
           </div>
         </div>
       </div>
+      <h2>Reviews</h2>
     </div>
     <div class="col-2"></div>
     <div class="col-4">
@@ -42,14 +43,17 @@
         <p>Add dates to see final price</p>
         <div class="price-top border-bottom"><span class="loct-price"><%= (@hotel.discountPrice) %>€</span> /day</div>
         <div class="dates">
-          <%= render './bookings/form' %>
+          <%= simple_form_for @user do |f| %>
+            <%= f.input :username %>
+            <%= f.input :password %>
+            <%= f.button :submit %>
+          <% end %>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<h2>Reviews</h2>
 
 
 <br>

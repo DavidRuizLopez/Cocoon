@@ -15,3 +15,8 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require flatpickr
+
+document.addEventListener('DOMContentLoaded', function() {
+  flatpickr('.your-selector');
+})
