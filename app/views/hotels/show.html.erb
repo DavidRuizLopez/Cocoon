@@ -43,9 +43,17 @@
         <p>Add dates to see final price</p>
         <div class="price-top border-bottom"><span class="loct-price"><%= (@hotel.discountPrice) %>€</span> /day</div>
         <div class="dates">
-          <%= simple_form_for @user do |f| %>
-            <%= f.input :username %>
-            <%= f.input :password %>
+          <%= simple_form_for [@hotel, @roomtypes] do |f| %>
+            <%= f.input :dates, as: :string,
+                           label: "Dates",
+                           placeholder: "From",
+                           wrapper_html: { class: "inline_field_wrapper calendar", id:"date-selec" },
+                           input_html: { class: "booking-input",
+                            data: {
+                              target: 'flatpickr.instance'
+                            }
+                           } %>
+            <%= f.input :persons %>
             <%= f.button :submit %>
           <% end %>
         </div>
