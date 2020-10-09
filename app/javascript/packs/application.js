@@ -16,3 +16,9 @@
 // const imagePath = (name) => images(name, true)
 
 console.log('Hello World from Webpacker')
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  flatpickr('.your-selector');
+})
