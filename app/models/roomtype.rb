@@ -1,3 +1,3 @@
 class Roomtype < ApplicationRecord
-  belongs_to :Hotel
+  belongs_to :hotel
 end

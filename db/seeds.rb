@@ -16,3 +16,4 @@ Hotel.create({name: 'Barceló Torre de Madrid', normalPrice: 100, discountPrice:
 Hotel.create({name: 'Iberostar Selection Paseo de Gracia 4 Sup', normalPrice: 90, discountPrice: 40, description: 'Iberostar Selection Paseo de Gracia is located in Barcelona, ​​in Plaza Catalunya, and offers a terrace with a pool and free Wi-Fi throughout. There is private parking.', Category: category_two})
 Hotel.create({name: 'Elysées Union', normalPrice: 90, discountPrice: 50, description: 'Elysées Union is housed in a 19th-century building in Paris and features an interior garden and air-conditioned rooms and apartments. It is just a 12-minute walk from the Eiffel Tower.', Category: category_one})
 
+puts "seed created"
