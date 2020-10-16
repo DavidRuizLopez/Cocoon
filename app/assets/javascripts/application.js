@@ -14,7 +14,10 @@
 //= require bootstrap-sprockets
 //= require activestorage
 //= require turbolinks
+//
+//*= require mapbox-gl
 //= require_tree .
+
 
 document.addEventListener('DOMContentLoaded', function() {
   flatpickr('.your-selector');

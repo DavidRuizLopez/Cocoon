@@ -40,6 +40,10 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'bootstrap', '~> 5.0.0.alpha1'
 
+gem 'mapbox-gl-rails'
+
+gem 'geocoder'
+
 #add flatpicker
 gem 'flatpickr'
 
