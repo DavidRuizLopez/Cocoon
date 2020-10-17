@@ -1,0 +1,39 @@
+.hero-image {
+	height: 50vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("https://s3-alpha-sig.figma.com/img/e596/14fe/481516dc31c00f36f40e2653323efc0e?Expires=1603670400&Signature=DxondAAqkMcyRetb-oVuHcuxOUtEzFilhoCAQaanOMDxIdsMdm7ip1QBpEOyX8icLTP5luCLx4Up981V83D05nypsGgxvPXvXwwk8l0Q5afOeqOEfyE7iIBQ9Su7l8i4c7JsfX6i-dd9MNiu7V2lJbZLOktnguEeRJEcszMshpOr~LSfe48wOmmpNzLVMLN-d-KZEEgBC4iHcKRD4xMO9TGO~rIb1c5DZdVUtDjiYvSbg2DMWJ53UPPyG5GwVcoaPX0B3vE~rywjHU5xPR3z3GQo-dbx5xB0HEddCqhPHkrh3tVFSX9BSZkdF~bpg4lMTgNWJbNA~JDDAIUKmad-aA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+	background-position: center bottom ;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.hero-text {
+	text-align: center;
+	position: absolute;
+	color: white;	
+}
+
+.hero-text a {
+	
+}
+
+.hero-text h1 {
+
+	font-size: 55px;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 100px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.sticky-block{
+	border: 1px solid black ;
+	border-radius: 10px ;
+	position: sticky;
+	top : 9% ;
+	min-height: 480px ;
+	max-height: 520px;
+}
