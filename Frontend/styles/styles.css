@@ -132,20 +132,17 @@ cursor: pointer;
 	text-align: center;
 }
 
+.hotel-img-carous {
+	width: 250px;
+	border-radius: 15px ;
+
+}
+
 .hotel-img {
 	width: 400px;
-	left: 0px;
-	top: 0px;
 	border-radius: 15px ;
 }
 
-.hotel-img-carous {
-	width: 300px;
-	height: 200px ;
-	left: 0px;
-	top: 0px;
-	border-radius: 15px ;
-}
 
 .hotel-title {
 	color: #87B145;
@@ -205,7 +202,7 @@ cursor: pointer;
 	height:50px;
 	position: relative;
 	text-decoration: none;
-	border: 3px solid #87B145;
+	border: 1.8px solid #87B145;
 	border-radius: 50% ;
 	color: white ;
 }
@@ -263,3 +260,5 @@ h3 {
 	text-transform: uppercase;
 	font-weight: bold ;
 }
+
+	
