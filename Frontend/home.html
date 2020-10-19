@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8" />
-        <title>COCOON</title>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css" />
-        <link type="text/css" rel="stylesheet" href="styles/styles.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- for star rating -->
-        <script src="https://kit.fontawesome.com/42f3a33dee.js" crossorigin="anonymous"></script> <!-- icons  caution price -->
-    </head>
+
 
 <nav class="navbar navbar-expand-lg fixed-top my-3 mx-2">
   <a href="">
@@ -46,7 +38,7 @@
       </div>
       <div class="col-xl-4 col-lg-6 hotel pb-5"> <!-- BELECK QUERIES -->
         <div class="hotel-position ">
-          
+
           <img class="hotel-img mt-0" src="https://s3-alpha-sig.figma.com/img/72cf/cef4/1adf2665f6df0d36a3184f6d4fe45d4d?Expires=1603065600&Signature=JQG0AIkwgsrFBabkGxhvbs5PkWPetJSNQufu4fecPOFSa16c3up5OM4zPIrb7ryrA9vkq20qTX6rUdSn7NTOS4NTjDg0Fw7kse1N9BcDRm9bVLh7B982fEChhAE1Ejrgx6VjGEb2sxM84GGp3TS~NzFRrbZQLi~pUh13NJ3XiB9hghDIlHkKOfkcNAXH7QKtDLBleNejkDX-25zbSMrXOTaRsFDneWki2xAqOFRQjYvAFMh9V6SQyCZwNxQFHwegyR54-D6Ax-IGsh1AM~eR0y2yxJhetrkRBIGLxUXxVtIt-Z39apsGihq5q0eBxK4S7emn-rtyvyXQCOw5hIZlmw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
           <div class="circleCenter"  style="top : 35% ; left: 57% ;">C</div>
           <div class="hotel-dscr">
@@ -164,7 +156,7 @@
               <p >VOYAGEURS</p>
             </div>
           </div>
-          <div class="row">          
+          <div class="row">
             <div class="col">
               <input type='text' class="form-control" id='datetimepicker4' />
             </div>
@@ -182,7 +174,7 @@
 
         <div class="col-lg-8 col-md-6 p-5 my-5 ">
           <h2 style="text-align: right ; color : white ;;">Il était temps de vous <br>échapper</h2>
-        </div>      
+        </div>
     </div>
   </div>
 
@@ -298,17 +290,17 @@
 
   <div class="container-fluid py-5" style="background-color: #F7F7F7;">
     <div class="row justify-content-center py-5">
-      <h2>ILS PARLENT DE NOUS</h2> 
+      <h2>ILS PARLENT DE NOUS</h2>
     </div>
     <div class="row justify-content-center p-5">
       <div class="col ">
-        <h3 class="text-center pb-5" style="font-size: 35px ;">"Si innovant"</h3> 
+        <h3 class="text-center pb-5" style="font-size: 35px ;">"Si innovant"</h3>
         <div class="row justify-content-center">
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span>
         </div>
       </div>
       <div class="col-5 ">
@@ -318,7 +310,7 @@
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span>
         </div>
       </div>
       <div class="col ">
@@ -328,7 +320,7 @@
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span> 
+          <span class="fa fa-star checked"></span>
         </div>
       </div>
     </div>
@@ -364,10 +356,122 @@
         <div class="col"><p>Hôtels</p></div>
       </div>
     </div>
-      
+
     </div>
   </footer>
-      
 
-  
+
+
 </body>
+
+
+
+
+
+
+<!-- mi codigo -->
+
+
+
+<div class="hero">
+  <div class="hero-text">
+    <h1>Cocoon</h1>
+    <p> travailler est un lifestyle,</p>
+    <p> travaille dans la nature près de chez toi</p>
+    <a href="" class="hero-btn">S’abonner</a>
+  </div>
+</div>
+<div style="display: flex;" class="container mt-5">
+  <div class="row">
+    <div class="col-5">
+      <h2>Le travail repensé</h2>
+
+      <h3>Deviens membre Cocoon et accède à des tarifs d’hôtels et de maisons pensés pour le travail et les loisirs, notamment en semaine, proche des grandes villes</h3>
+
+      <a href="" class="hero-btn">S’abonner</a>
+    </div>
+
+    <div class="col-3"></div>
+
+    <div class="col-4">
+      <% @hotels_preview.each do |hotel| %>
+        <div class="card mt-3">
+          <%= link_to (hotel_path(hotel)) do %>
+            <img src="https://www.bestjobersblog.com/wp-content/uploads/2019/07/Nuit-Insolite-Corse-Cocoon-Village.jpg" alt=""> <br>
+            <%= hotel.name %> <br>
+            <%= hotel.normalPrice %> <br>
+            <%= hotel.discountPrice %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="mt-5" style="background-color: #F7F7F7;">
+  <h2 class="text-center">Rejoins la famille Cocoon</h2>
+  <div class="d-flex container mt-5">
+    <div class="row">
+      <div class="col text-center">
+        <i class="fas fa-tv"></i>
+        <h3>Tu t’abonnes</h3>
+        <p>Et tu accèdes à une sélection d’hôtels et de maisons à des prix te permettant d’y aller régulièrement en semaine</p>
+      </div>
+      <div class="col text-center">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Choisis tes dates et ton Cocoon</h3>
+        <p> Les lieux sélectionnés par Cocoon ont des espaces de travail, une bonne connection internet, et des services d’hospitalité traditionnels sélectionnés pour leur qualité et leur proximité </p>
+      </div>
+      <div class="col text-center">
+        <i class="far fa-heart"></i>
+        <h3>Profite d’un nouveau lifestyle</h3>
+        pQue rêver de mieux que de travailler, de te divertir,
+et de rencontrer de nouvelles personnes dans des environnements agréables plutôt que de rester chez soi
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center mt-5">
+    <a href="" class="hero-btn mb-5">S’abonner</a>
+  </div>
+</div>
+<div class="row justify-content-between mx-5 mt-5">
+  <% @hotels.each do |hotel| %>
+          <div class="card col-3">
+            <%= link_to (hotel_path(hotel)) do %>
+              <img src="https://www.bestjobersblog.com/wp-content/uploads/2019/07/Nuit-Insolite-Corse-Cocoon-Village.jpg" alt="">
+              <%= hotel.name %> <br>
+              <%= hotel.normalPrice %> <br>
+              <%= hotel.discountPrice %>
+            <% end %>
+          </div>
+        <% end %>
+</div>
+
+<% @categories.each do |category| %>
+  <%= link_to category.price, category_path(category) %>
+
+<% end %>
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>COCOON</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css" />
+        <link type="text/css" rel="stylesheet" href="styles/styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- for star rating -->
+        <script src="https://kit.fontawesome.com/42f3a33dee.js" crossorigin="anonymous"></script> <!-- icons  caution price -->
+    </head>
+
+<nav class="navbar navbar-expand-lg fixed-top my-3 mx-2">
+  <a href="">
+    <div class="circleCenterNav">C</div>
+  </a>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Saisissez vos dates" aria-label="Search">
+    </form>
+  </div>
+</nav>
