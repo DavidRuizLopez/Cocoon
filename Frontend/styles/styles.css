@@ -13,12 +13,43 @@ $container-max-widths: (
   lg: 1024px
 );
 
-.secl {
-
+.navbar-toggler-icon {
+	padding: 1px 5px ; 
+	font-size: 18px ;
+	line-height: 0.3 ;
+	background: #fff ;
 }
 
-.navbar {
-  background: transparent;
+.bg-dark {
+	background: transparent !important;
+	transition: 0.9s ease ; 
+}
+
+.bg-dark.scrolled{
+	background: #d9d9d9 !important;
+}
+
+.bg-dark:hover{
+	background: #757575 !important;
+}
+
+.fa-1x {
+	font-size: 1.5rem;
+	color :white ;
+}
+
+.navbar-toggler.toggler-example {
+cursor: pointer;
+}
+
+
+.navbar-expand .navbar-toggler {
+	display: block;
+}
+
+.btn-outline-success{
+	color: #87B145;
+	border-color: #87B145;
 }
 
 .circleCenterNav {
@@ -29,7 +60,7 @@ $container-max-widths: (
 	align-items: center;
 	justify-content: center;
 	position: absolute;
-	top: 42%;
+	top: 50%;
 	left: 4%;
 	transform: translate(-50%, -50%);
 
@@ -39,6 +70,25 @@ $container-max-widths: (
 	padding-bottom: 4px ;
 	padding-right: 2px ;
 }
+
+
+.btn-outline-success:hover{
+	background-color: #87B145 ;
+	border-color: #87B145 ;
+}
+
+.btn-success:hover{
+	color: #87B145;
+	border-color: #87B145;
+	background-color: transparent; 
+}
+
+.btn-success{
+	background-color: #87B145 ;
+	border-color: #87B145 ;
+}
+
+
 
 .hero-image {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("https://tr-images.condecdn.net/image/PkewRo90DEv/crop/1620/f/countryside-at-courboyer-le-perche-france-conde-nast-traveller-9oct15-christophe-madamour_.jpg");
@@ -79,21 +129,20 @@ $container-max-widths: (
 
 .hotel {
 	position: relative;
+	text-align: center;
+}
+
+.hotel-img-carous {
+	width: 250px;
+	border-radius: 15px ;
+
 }
 
 .hotel-img {
 	width: 400px;
-	left: 0px;
-	top: 0px;
 	border-radius: 15px ;
 }
 
-.hotel-img-carous {
-	width: 300px;
-	left: 0px;
-	top: 0px;
-	border-radius: 15px ;
-}
 
 .hotel-title {
 	color: #87B145;
@@ -148,6 +197,47 @@ $container-max-widths: (
 	border-radius: 10px ;
 }
 
+.iconbtn{
+	width: 50px;
+	height:50px;
+	position: relative;
+	text-decoration: none;
+	border: 1.8px solid #87B145;
+	border-radius: 50% ;
+	color: white ;
+}
+
+.iconbtn:before{
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.iconbtn:after{
+	content :'';
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border-radius: 50%;
+	z-index: 0;
+	transition: 0.3s ;
+	background: #87B145 ;
+
+}
+.iconbtn:hover{
+	color: #87B145 ;
+}
+.iconbtn:hover:after{
+	transform: scale(.0);
+	background: #87B145 ; 
+}
+
+
 p {
 	color : #484848 ;
 	font-family: Roboto;
@@ -170,3 +260,5 @@ h3 {
 	text-transform: uppercase;
 	font-weight: bold ;
 }
+
+	
