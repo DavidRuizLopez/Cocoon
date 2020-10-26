@@ -16,7 +16,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- for star rating -->
         <script src="https://kit.fontawesome.com/42f3a33dee.js" crossorigin="anonymous"></script> <!-- icons  footer -->
-        
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2CyRywJmUrs5HoHTmvfklB0EZveiUwwQ&callback=initMap&libraries=&v=weekly" defer></script> <!-- MAPS API  -->
+                
     </head>
 
     <nav class="navbar navbar-expand navbar-dark bg-dark  fixed-top py-3 px-2" role="navigation" >
@@ -39,6 +41,7 @@
   $('nav',).toggleClass('scrolled',$(this).scrollTop() >400) ; 
   }) ;
 </script>
+
 
 <body>
   <div class="hero-image">
@@ -63,7 +66,7 @@
 
           <div class="row my-5 justify-content-center" ><a href="#" class="mt-3 btn btn-light btn-lg" role="button" >Le COCOON en photos</a></div>
           <div class="row my-5">
-          <div class="col my-2 text-center" style="border: 1px solid;"><img class="hotel-img-carous my-2" src="https://s3-alpha-sig.figma.com/img/739f/a89f/ea39bd384b67f83a35bdeb616cc5afe6?Expires=1603670400&Signature=BiDzIjVYeOOM7pW7ep~WP2XrUk1t9CRUwNroIq8PfTLoXXDe~K5gZ8Iah08--dhreTdLiw~VbVzlfXbd8g3adrwkVLDzVbn9XG14VdPhL~Ef7JnnUKNXK841DQ0XIliMYHh7bkpR9IKJSBhX92QoelC~Tuhb6PjXNkrnDosXn3uiSCPq6UUVIYHqXCM5dRe9tVSBoncHkYnvnLm97KBiWXTFEPqukPGwfvvQ13NHyaJJv9mxRm7vNJY0KsScBBOL5DrmrayM5Coh5npXX2Vw~vldrJAugyiBRi93zqV4ZEwWNLZCd4zAAK5P97nR1JEQQKnVqTVZoe-BFN5ep3n-DQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
+          <div class="col my-2 text-center" ><img class="hotel-img-carous my-2" src="https://s3-alpha-sig.figma.com/img/739f/a89f/ea39bd384b67f83a35bdeb616cc5afe6?Expires=1603670400&Signature=BiDzIjVYeOOM7pW7ep~WP2XrUk1t9CRUwNroIq8PfTLoXXDe~K5gZ8Iah08--dhreTdLiw~VbVzlfXbd8g3adrwkVLDzVbn9XG14VdPhL~Ef7JnnUKNXK841DQ0XIliMYHh7bkpR9IKJSBhX92QoelC~Tuhb6PjXNkrnDosXn3uiSCPq6UUVIYHqXCM5dRe9tVSBoncHkYnvnLm97KBiWXTFEPqukPGwfvvQ13NHyaJJv9mxRm7vNJY0KsScBBOL5DrmrayM5Coh5npXX2Vw~vldrJAugyiBRi93zqV4ZEwWNLZCd4zAAK5P97nR1JEQQKnVqTVZoe-BFN5ep3n-DQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
           <div class="col py-2 text-center"><img class="hotel-img-carous " src="https://s3-alpha-sig.figma.com/img/e265/f204/bf069da4873b02059fd77a056a40d16b?Expires=1603670400&Signature=c0IG86~AuAs-UJMphMk0xYSI26TGkkzjZTOG9ex3zJImmLMn9gE9gR4qI4sRFHVIzECahjfcZhhpLGlkQUyZ1rMj37S9AY-1T7ZBkTvyTokBDkMjm5gONAMg41HjG8uL7t3t9IB5tWdwYU-KaKSv1RAGkH5m~ahpKx~S~j4hNo8QEp5MmcbAV4l~uqqC0kowuObWPsTEJrJ9KK-jttGpfeRjOFTcj15BFQLEi1cpuTe70GvTqnyIwcC9Y-GEnRA-sVBxv5pFo1XJjrFni9Nst2jW5do2E2aWo8sAWMVkgWs6C1SzQ8uk02eVV~q-XVujqCxHdhxikRVN4rtdhLKjww__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
           <div class="col py-2 text-center"><img class="hotel-img-carous " src="https://s3-alpha-sig.figma.com/img/fa25/e9ac/2b1aa296b8661ad30777a6c2c9acc2a4?Expires=1603670400&Signature=Hj0oUQ8BCoCDTmCc8MNIfGt0UqoHNomHeskBJo60YO3ohVuzLDKkQEl9IjL~ghfvXyysfD7mo2~0j1YEyr8-9xSJ5SLGje44X9R5kJU1O~1arR64zCzVg2~1Wrx1l1UybQKZOQ1Q0NcBJk~2XsKhroL5OfLr4gp64PWjBDshNh3SIZdwcpihVliBCoA40n6vkVdfjzr5h5TxjPh-uBoilxnXTqNB5fpaiVJKDCkAdn2FWjQGo9Ut~qcXUrth1o3w3QKPibibs46MmHUrpB2rQNmqFUCSilja2BO2~2xsEJJHIZs-hknP23Eu78208dTYUK1sEFaWc7Hb-cHKA1IaRg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
           <div class="col py-2 text-center"><img class="hotel-img-carous " src="https://s3-alpha-sig.figma.com/img/618a/d400/1b876aac98ec1c57f588b56371a55b06?Expires=1603670400&Signature=TYc0AO8DqEM9RKCgs2qC~Npcy8C6SxKfdbauzA2O5ohv3Gze0riPHHW62ISP-gnV-hCE3ZT-XhtU8Q4BhZvKR6ncBTO2eYQA~~Gz3Ru8Azpsfdx88zIU5O4WBLGX8miuCwOaTUSd-L8W4xVJrtlEo9zseau8-TUNXGzmHayPKBVafWUWuuyuKuDaQHisFix8JYpl6eQbRd6QJ7dB4MufgBV45p4jCYk~PlfY1UDYvdB3~gwasfXZgAD~-vMRxLUD3dMTIOhTn3X15rUSXJYZVbDvF4fN0~Rm-X9bah~-ooQcu5F8gZkw4x-H4z6UA0a62FOREU8~tBAmq45PBdN8Ww__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
@@ -170,44 +173,116 @@
             
             <br>
             <br>
+            <div class="col">
+              <div><h3 class="text-center p-2" style="text-transform: none ; color: black ;" >Les bonnes infos à savoir</h3></div>
+              <div class="row">
+                <div class="col-xl-6 col-lg-12">
+                  <div class="col div-div4 " style="color : #d9d9d9 ; background-color: white ; border: 1px solid black" >
+                    <h3 class="text-left py-3 pl-5 " style="color: black;text-transform: none ; "> Horaires</h3>
+                    <div class="row mx-xl-5 mx-lg-3 my-3 pt-3 text-center" style="; border-bottom: 1.2px solid ;" >
+                      <div class="col">
+                        <div><p style="color: black ;">Check in</p></div>
+                        <div><p style="color: black ;">Check out</p></div>
+                      </div>
+                      <div class="col">
+                        <div class="text-right"><p>Dès 12h</p></div>
+                        <div class="text-right"><p>Dès 15h</p></div>
+                      </div>
+                    </div>
+                    <div class="row mx-xl-5 mx-lg-3 my-3 text-center" style="border-bottom: 1.2px solid ;" >
+                      <div class="col " ><p>Petit déjeuner </p></div>
+                      <div class="col text-right"><p>6h45-22h</p></div>       
+                    </div>
+                    <div class="row mx-xl-5 mx-lg-3 my-3 text-center" style="border-bottom: 1.2px solid ;" >
+                      <div class="col " ><p>Sauna</p></div>
+                      <div class="col text-right"><p>6h45-22h</p></div>      
+                    </div>
+                    <div class="row mx-xl-5 mx-lg-3 my-3 text-center" style="border-bottom: 1.2px solid ;" >
+                      <div class="col " ><p>Hammam</p></div>
+                      <div class="col text-right"><p>6h45-22h</p></div>      
+                    </div>
+                    <div class="row mx-xl-5 mx-lg-3 my-3 text-center" >
+                      <div class="col " ><p>Espace Coworking</p></div>
+                      <div class="col text-right"><p>24h/24</p></div>      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-12">
+                  <h3 style="color: black;text-transform: none ; ">Le COCOON sur la carte </h3>
+                  <div id="map"></div>
+                  <script>
+                    function initMap(){
+                      var options = {
+                        zoom = 8,
+                        center : {lat: 49.022994,lng:1.609722}
+                      }
+                      const map = new google.maps.Map(document.getElementById("map"),options);
+                    }
+                  </script>
 
-            <div>
-              <h3 class="text-center p-5" style="text-transform: none ; color: black ;" >Les bonnes infos à savoir</h3>
-              <div class="col div-div4 " style="color : #d9d9d9 ; background-color: white ; border: 1px solid black" >
-                <h3 class="text-left py-3 pl-5 " style="color: black;"> Horaires</h3>
-                <div class="row mx-xl-5 mx-lg-3 my-3 pt-3 text-center" style="; border-bottom: 1.2px solid ;" >
-                  <div class="col">
-                    <div><p style="color: black ;">Check in</p></div>
-                    <div><p style="color: black ;">Check out</p></div>
-                  </div>
-                  <div class="col">
-                    <div class="text-right"><p>Dès 12h</p></div>
-                    <div class="text-right"><p>Dès 15h</p></div>
-                  </div>
-                </div>
-                <div class="row mx-xl-5 mx-lg-3 my-3 text-center" style="border-bottom: 1.2px solid ;" >
-                  <div class="col " ><p>Petit déjeuner </p></div>
-                  <div class="col text-right"><p>6h45-22h</p></div>       
-                </div>
-                <div class="row mx-xl-5 mx-lg-3 my-3 text-center" style="border-bottom: 1.2px solid ;" >
-                  <div class="col " ><p>Sauna</p></div>
-                  <div class="col text-right"><p>6h45-22h</p></div>      
-                </div>
-                <div class="row mx-xl-5 mx-lg-3 my-3 text-center" style="border-bottom: 1.2px solid ;" >
-                  <div class="col " ><p>Hammam</p></div>
-                  <div class="col text-right"><p>6h45-22h</p></div>      
-                </div>
-                <div class="row mx-xl-5 mx-lg-3 my-3 text-center" >
-                  <div class="col " ><p>Espace Coworking</p></div>
-                  <div class="col text-right"><p>24h/24</p></div>      
                 </div>
               </div>
             </div>
-          
+
+            <div class="col py-5">
+              <div><h3 class="text-center p-2" style="text-transform: none ; color: black ;">Nos autres COCOON dans la même catégorie</h3></div>
+              <div class="row">
+                <div class="col">
+                  <div class="hotel ">
+                    <div class="hotel-position " >
+                      <div class="circleCenter">C</div>
+                      <img class="hotel-img-carous" src="https://s3-alpha-sig.figma.com/img/f7ec/bc66/0ef5213af5df63be4694a812b4c72bef?Expires=1603065600&Signature=dhvTA29nlB6YuJPReRZ~e7tgK1uU4ow2qoc-l89u3I21WZelgHusGu9tTby-zKd2if0rt09J~fqV0ep~EGHeXkNBKiXTh7OPfOAUOQ~bG0lqDhvn1FpPuQb8GVJKPzeqKgsqDxIKdn-JE1Jg7YZD118MoYV-MuENz0a~eXuS~aa7yznLR4pSoLcpFVU34lD8VcNdlY2~GYvQIok~KQWRkFHXcbcAn-lNlIohaoyb7Ejw-lTMYk1EYaKckVZnsj0LLzIhY-YJWP8orrdvS5zOAMbPQbSxrSJKQm2L8LYju81r3UZCMaVWTFofmwQpb5JBEkiVDOwsY7paM8YN3ijaFw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
+                    </div>
+                    <div class="hotel-dscr">
+                      <h5 class="hotel-title mt-3 mb-1">Domaine de la Corniche</h5>
+                      <p class="hotel-text " >À partir de Y€/personne - 2 nuits.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="hotel ">
+                    <div class="hotel-position " >
+                      <div class="circleCenter">C</div>
+                      <img class="hotel-img-carous" src="https://s3-alpha-sig.figma.com/img/ca1d/0d10/5544379bbd1797b96a80da31b7a6ffd9?Expires=1604275200&Signature=fl9aHwcfNWzMyguBr-xkvYIM5f5Y3KfsiBuzXv8efffgumdxFQahQY1woBrmS~Lh8ZCRNiSWdRre35f04f11binXCtxmnUnDBjDqKhL3z0oWAwCx0QWS0X-b9ZgbaSMGM2ORoxCS3~w~K0ccW2hWy6ngpFqwMEEuSAvuovGHcGvEMJ38~HZnaR1-OA4FqUSaGIDcXV4W9oEWfzrgjkf8XE29lGYdqKEaUccWJG9cIk7hCWBE7B5vm-DRNjQwlP~SaEoNkYQVAq7PAGTCDB2Bm1QXwR4s68f4K8Kjp82M3G63SohbKSN9LZOTO1oKjnNpALA6ikY~3AMg0yqQfyA~Ow__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
+                    </div>
+                    <div class="hotel-dscr">
+                      <h5 class="hotel-title mt-3 mb-1">Les Etangs de Corot - 20min de Paris</h5>
+                      <p class="hotel-text " >À partir de Y€/personne - 2 nuits.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="hotel ">
+                    <div class="hotel-position " >
+                      <div class="circleCenter">C</div>
+                      <img class="hotel-img-carous" src="https://s3-alpha-sig.figma.com/img/4d85/d901/7d7913480c2dc2bcf54d48f38683f87b?Expires=1604275200&Signature=AYDL5PxtPK0oWKDTTdWRuzwQU8g~-qOBhfR67JVtz6IheoFLyyXSrwalwFVIzEutynJEq9gtq9VBlmr~d1hAcfBHhOCUBUi4wVG2Z3UHlhceKNAsvu2iVC7pzImCvuGZnok590ssv-Rk3aHLrh~meK8OTIgEw3GyTmTHpOvdCS1UwuBmfvN0zwtz3BxFyWv7VkwCozNJflNeNEME9u6Rc~cC~wfo2G0dQDmZ2DsVtyADrPd7kZ1K7VZM3LQRMpjz6aW~7zNmPsk3PqjXtnW4uS0sRfQCK390nvP6ZKRImvfmEt-b68bH9Y00X930nDx4whvDKpftp2JqW75cXHYLPw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
+                    </div>
+                    <div class="hotel-dscr">
+                      <h5 class="hotel-title mt-3 mb-1">Aigle Noir Hôtel - 1h de Paris</h5>
+                      <p class="hotel-text " >À partir de Y€/personne - 2 nuits.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="hotel ">
+                    <div class="hotel-position " >
+                      <div class="circleCenter">C</div>
+                      <img class="hotel-img-carous" src="https://s3-alpha-sig.figma.com/img/e408/2783/4c71ba01decd1035b2f0499bc86b7f8a?Expires=1604275200&Signature=dXt-hVbu~Y5JcwgHJxyWtDXpQu5mPP6679a68XeJv89WUwPj9UYwVwc6BAEQJ1YfEd6jJTpq7v5h9pgjbpKjWbBa~1o05rlDLMwIwyEspiA0ysT7CHRU47Z4mTnxBKjKx9Gg7aGv2YfhaLuHWvNBJ6PW4G7JiCXS8q0yNZxF7vwGgTp8x2QPPr9qJS24P-rTpL8d82bEC99Yt9ccHLuRXLFsMPPrv5ieDOeXlsbLB2HJrddW3JB2b3NruFQ77IlnfdgV3AIiKdJMmp6FFgPpMghK3~CnXfyjn1WDEdPGGpdY8iwahCwjm6jv69Bg7xswIZobtLMu9wwlMgUUjYAJ9g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="">
+                    </div>
+                    <div class="hotel-dscr">
+                      <h5 class="hotel-title mt-3 mb-1">Le Manoir des Étilleux - 2h de Paris</h5>
+                      <p class="hotel-text " >À partir de Y€/personne - 2 nuits.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div> 
+
         </div>
 
 
-      <div class="col-xl-4 col-md-6" >
+      <div class="col-xl-4 col-lg-6 my-3" >
         <div class="sticky-block p-5">
           <div class="row">
             <div class="col align-self-center"> <h4 style="color: #adadad ; font-weight: bolder;"><s>120€</s></h4> </div>
@@ -273,3 +348,39 @@
         </div>
       </div>
     </div>
+  </div>
+
+<footer class="page-footer">
+    <div class="container justify-content-center mt-5 pb-2">
+      <div class="row  ">
+        <div class="col text-muted">
+        <p>© 2020 par Cocoon Houses SAS</p>
+        </div>
+        <div class="col mb-2 text-center">
+          <a class="px-2 iconbtn fab fa-instagram "></a>
+          <a class="px-2 iconbtn fab fa-facebook"></a>
+          <a class="px-2 iconbtn fab fa-linkedin"></a>
+          <a class="px-2 iconbtn fab fa-twitter"></a>
+          <a class="px-2 iconbtn fab fa-youtube"></a>
+        </div>
+        <div class="col text-right" >
+          <a href="#" class="pt-1 btn btn-success " role="button" >S’abonner</a>
+        </div>
+      </div>
+      <div class="row my-3 " style="height: 1px ; background-color: #484848;"></div>
+      <div class="row ">
+        <div class="col"><p>Accueil</p></div>
+        <div class="col"><p>A propos</p></div>
+        <div class="col-1.5 mx-3"><p>Comment ça marche</p></div>
+        <div class="col-1.5 mx-3"><p>Deviens Membre</p></div>
+        <div class="col-1.5 mx-3"><p>Explore nos cocoons</p></div>
+        <div class="col"><p>Contacts</p></div>
+        <div class="col"><p>Entreprises</p></div>
+        <div class="col"><p>Hôtels</p></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -55,7 +55,7 @@ font-weight: bolder;
 	border: 1px solid black ;
 	border-radius: 15px ;
 	position: sticky;
-	top : 9% ;
+	top : 11% ;
 	min-height: 570px ;
 	max-height: 700px;
 }
@@ -68,4 +68,10 @@ font-weight: bolder;
 	line-height: 24px;
 
    
+}
+
+#map {
+	height: 400px;
+	width: 100%;
+
 }
